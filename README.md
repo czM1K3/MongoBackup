@@ -3,5 +3,5 @@ This is container that takes backup of MongoDB. It is ment to be ran in Kubernet
 
 ## Docker example
 ```bash
-docker run --rm -r MONGODB_URI="your-mongodb-uri/database-to-backup" -v your-backup-path:/backup czm1k3/mongobackup
+docker run --rm -e MONGODB_URI="your-mongodb-uri/database-to-backup" -v your-backup-path:/backup czm1k3/mongobackup
 ```
